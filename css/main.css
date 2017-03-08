@@ -1,0 +1,64 @@
+.bouton-image:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: text-top;
+    background-color: transparent;
+    background-position : center center;
+    background-repeat:no-repeat;
+}
+
+.container {
+  padding: 20px;
+}
+input[type="radio"] {
+  display: none;
+}
+img {
+  padding: 5px;
+  margin: 5px;
+}
+input[type="radio"]:checked + img {
+  background-color: #aaa;
+}
+
+
+body { margin: 0; background: #333; }
+header {
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+
+}
+header div img {
+  width: 100%;
+  height: auto;
+  border: 5px solid black;
+}
+@media screen and (max-width: 400px) {
+  header div { margin: 0; }
+  header { padding: 0; }
+
+}
+
+h1 {
+  color: White;
+}
+/**************
+- HomePage Robots Cards
+***************/

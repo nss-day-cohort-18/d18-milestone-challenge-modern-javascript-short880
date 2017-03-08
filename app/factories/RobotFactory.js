@@ -1,5 +1,14 @@
 "use strict";
-console.log("robotFactory.js:");
+console.log("RobotFactory.js:");
+
+/**************************
+    -----To Do List-----
+
+1) Create Robot (done)
+2) Create types
+
+
+****************************/
 
 app.factory('GetFactory', () => {
 
@@ -9,5 +18,14 @@ let Robot = () => {
   this.health = null;
   this.model = null;
 };
+
+var HeavyAssault = new Robot ();
+
+
+
+var AerialAssault = new Robot ();
+
+
+var LightAssault = new Robot ();
 
 });

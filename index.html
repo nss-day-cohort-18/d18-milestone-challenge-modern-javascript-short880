@@ -10,6 +10,7 @@
 </head>
 <body ng-app="RobotDome">
 
+  	<div ng-include="'partials/header.html'"></div>
 
   		<div ng-view></div> <!-- Connects templates !-->
 
@@ -32,13 +33,13 @@
 
 	<!-- Factories -->
 	<script type="text/javascript" src="app/factories/RobotFactory.js"></script>
-	<!-- <script type="text/javascript" src="app/factories/DocClientFactory.js"></script> -->
 	<!-- <script type="text/javascript" src="app/factories/FilterFactory.js"></script> -->
 
 	<!-- Controllers -->
 
-	<script type="text/javascript" src="app/controllers/DocCtrl.js"></script>
-	<script type="text/javascript" src="app/controllers/PatientCtrl.js"></script>
+	<script type="text/javascript" src="app/factories/RobotCtrl.js"></script>
+	<!-- <script type="text/javascript" src="app/controllers/DocCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/PatientCtrl.js"></script> -->
 	<!-- <script type="text/javascript" src="app/controllers/NewBoardCtrl.js"></script> -->
 	<!-- <script type="text/javascript" src="app/controllers/NewPinCtrl.js"></script> -->
 	<!-- <script type="text/javascript" src="app/controllers/SavePinCtrl.js"></script> -->
