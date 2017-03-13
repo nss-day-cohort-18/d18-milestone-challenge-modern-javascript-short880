@@ -26,7 +26,7 @@ input[type="radio"]:checked + img {
 
 
 body { margin: 0; background: #333; }
-header {
+selects {
   padding: .5vw;
   font-size: 0;
   display: -ms-flexbox;
@@ -37,15 +37,17 @@ header {
   display: -webkit-box;
   display: flex;
 }
-header div {
+selects div {
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
   width: 200px;
   margin: .5vw;
-
 }
-header div img {
+selects div:hover {
+  opacity: .5;
+}
+selects div img {
   width: 100%;
   height: auto;
   border: 5px solid black;
@@ -56,9 +58,38 @@ header div img {
 
 }
 
-h1 {
+h2 {
   color: White;
+  text-align: center;
 }
 /**************
-- HomePage Robots Cards
+- Subclass Modal
 ***************/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #333;
+    margin: auto;
+    border: 2px solid black;
+    width: 55%;
+
+}
+
+
+.modalImgs > img {
+  border: 2px solid black;
+  padding: 0;
+}

@@ -1,8 +1,24 @@
-<h2> CHOICE YOUR ROBOT </h2>
-<header>
-<div id="HeavyClass"><img src="images/Heavy.jpg" alt></div>
-<div id="AerialClass"><img src="images/Flying.jpg" alt></div>
-<div id="LightClass"><img src="images/lightRobot.jpg" alt></div>
+<h2>Choose Your Robot</h2>
+
+<selects>
+<div ng-repeat="type in Classes">
+<div><img src="{{type.image}}" ng-click="ClassSelect(type)" alt="{{type.name}}"></div>
+</div>
+
 
   <!-- images placed inside block elements to deal with a Firefox rendering bug affecting  scaled flexbox images -->
-</header>
+</selects>
+
+
+<div id="subClassPopup" class="modal">
+
+  <!-- Modal content -->
+    <div class="modal-content">
+  <div class="row">
+    <div ng-repeat="type in subClass">
+     <div class="col-md-5">
+       <div class="modalImgs"><img src="{{type.image}}" ng-click="ModelSelect(type)" width="325" height="300"></div>
+   </div>
+ </div>
+ </div>
+ </div>

@@ -32,6 +32,7 @@ LightClass.type = "LightClass";
 
 
 
+
 let RobotType = {};
 
 RobotType.HeavyOne = Object.create(HeavyClass);
@@ -39,45 +40,45 @@ RobotType.HeavyOne.minHealth = 500;
 RobotType.HeavyOne.maxHealth = 800;
 RobotType.HeavyOne.baseDamage = 65;
 RobotType.HeavyOne.model = "HeavyOne";
-RobotType.Hacker.Image = "images/HeavyOne.jpg";
+RobotType.HeavyOne.image = "images/HeavyOne.jpg";
 
-RobotType.HeavyOne = Object.create(HeavyClass);
-RobotType.HeavyOne.minHealth = 550;
-RobotType.HeavyOne.maxHealth = 900;
-Robottype.HeavyOne.baseDamage = 50;
-RobotType.HeavyOne.model = "HeavyTwo";
-RobotType.Hacker.Image = "images/HeavyTwo.jpeg";
+RobotType.HeavyTwo = Object.create(HeavyClass);
+RobotType.HeavyTwo.minHealth = 550;
+RobotType.HeavyTwo.maxHealth = 900;
+RobotType.HeavyTwo.baseDamage = 50;
+RobotType.HeavyTwo.model = "HeavyTwo";
+RobotType.HeavyTwo.image = "images/HeavyTwo.jpeg";
 
 RobotType.AerialOne = Object.create(AerialAssault);
 RobotType.AerialOne.minHealth = 400;
-RobotType.AerialOne.Maxhealth = 800;
+RobotType.AerialOne.maxhealth = 800;
 RobotType.AerialOne.baseDamage = 55;
-RobotType.AerialOne.Model = "AerialOne";
-RobotType.AerialOne.Image = "images/AerialOne.jpg";
+RobotType.AerialOne.model = "AerialOne";
+RobotType.AerialOne.image = "images/AerialOne.jpg";
 
-RobotType.AerialTwo = Object.create(AerialTwo);
+RobotType.AerialTwo = Object.create(AerialAssault);
 RobotType.AerialTwo.minHealth = 500;
 RobotType.AerialTwo.maxHealth = 950;
-RobotType.AerialOne.baseDamage = 65;
+RobotType.AerialTwo.baseDamage = 65;
 RobotType.AerialTwo.model = "AerialTwo";
-RobotType.AerialTwo.Image = "images/AerialTwo.jpg";
+RobotType.AerialTwo.image = "images/AerialTwo.jpg";
 
 RobotType.LightOne = Object.create(LightClass);
 RobotType.LightOne.minhealth = 400;
 RobotType.LightOne.maxHealth = 750;
 RobotType.LightOne.baseDamage = 45;
 RobotType.LightOne.model = "LightOne";
-RobotType.LightOne.Image = "images/LightOne";
+RobotType.LightOne.image = "images/LightOne";
 
 RobotType.LightTwo = Object.create(LightClass);
 RobotType.LightTwo.minhealth = 400;
 RobotType.LightTwo.maxHealth = 750;
 RobotType.LightTwo.baseDamage = 45;
 RobotType.LightTwo.model = "LightOne";
-RobotType.LightTwo.Image = "images/LightOne";
+RobotType.LightTwo.image = "images/LightTwo"
 
 let getBot = (x) => {
-  return Bot[x];
+  return RobotType[x];
 };
 
 return {getBot};

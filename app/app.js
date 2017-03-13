@@ -23,6 +23,7 @@ app.config(function($routeProvider) {
 	// Doctor or Client Selection Page
 		.when('/', {
 		templateUrl: "partials/homePage.html",
+    controller: "RobotCtrl"
 		})
 		.when('/patientList', {
    	templateUrl: "partials/patientList.html",
